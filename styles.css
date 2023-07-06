@@ -1,0 +1,235 @@
+:root {
+  --plain-text-color: white;
+  --heading-font: Arial;
+  --subheading-font: Arial Narrow;
+  --plain-text-font: Arial;
+  --header-color: #be3144;
+  --section-1-color: #303841;
+  --section-2-color: #45567d;
+  --section-3-color: #303841;
+}
+
+html * {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  transform: scale(125%);
+}
+
+p {
+  font-size: 16;
+  padding-left: 2rem;
+  font-family: var(--plain-text-font)
+}
+
+header {
+  background-color: var(--header-color);
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid black;
+  height: 5rem;
+  position: fixed; 
+  width: 100%;
+  top: 0;
+}
+
+#nav-link {
+  padding-right: 2rem;
+  text-decoration: none;
+  font-size: 18;
+  font-weight: bold;
+  font-family: var(--plain-text-font);
+  color: var(--plain-text-color);
+}
+
+#nav-link:nth-of-type(3) {
+  padding-right: 1rem;
+}
+
+.page-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#welcome-section {
+  height: 100vh;
+  padding-bottom: 3rem;
+  background-color: var(--section-1-color);
+}
+
+.welcome-heading {
+  text-align: center;
+  padding-top: 10rem;
+  font-size: 32;
+  font-family: var(--heading-font);
+  color: var(--plain-text-color);
+}
+
+.welcome-subheading {
+  text-align: center;
+  font-size: 20;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-family: var(--subheading-font);
+  color: var(--header-color);
+}
+
+.bio {
+  font-weight: normal;
+  font-size: 16;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-family: var(--plain-text-font);
+  color: var(--plain-text-color);
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.resume-caption {
+  height: 20px;
+  width: 127.5px;
+  font-size: 12;
+  background-color: grey;
+  font-family: var(--plain-text-font);
+  color: var(--plain-text-color);
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+#resume-img {
+  height: 165px;
+  width: 127.5px;
+  text-align: center;
+}
+
+#projects {
+  background-color: var(--section-2-color);
+}
+
+.projects-heading {
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 4rem;
+  font-family: var(--heading-font);
+  color: var(--plain-text-color);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.img-tile {
+  width: 250px;
+  height: 250px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+#project-cap {
+  background-color: var(--section-1-color);
+  height: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-family: var(--plain-text-font);
+  color: var(--plain-text-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#contact-section {
+  background-color: var(--section-3-color);
+}
+
+.contact-heading {
+  text-align: center;
+  padding-bottom: 3rem;
+  color: var(--plain-text-color);
+  font-family: var(--heading-font);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.li-text {
+  position: relative;
+  bottom: 25px;
+  font-family: var(--plain-text-font);
+}
+
+ul {
+list-style-type: none;
+  color: white;
+}
+
+.code-link {
+  color: var(--plain-text-color);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .welcome-heading {
+    padding-top: 3rem;
+  }
+  .welcome-subheading {
+    padding-bottom: 0.5rem;
+  }
+  #resume-img {
+    width: 85px;
+    height: 110px;
+  }
+  .resume-caption {
+    height: 10px;
+    font-size: 12;
+    width: 85px;
+    padding-bottom: 4px;
+    padding-top: 0;
+  }
+  .resume-figure {
+    border: 1px solid black;
+    width: 85px;
+    height: 11
+  }
+  .bio {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+}
